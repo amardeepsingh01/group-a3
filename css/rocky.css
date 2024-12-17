@@ -1,0 +1,136 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh; 
+}
+header {
+    grid-row: 1;
+    background-color: #808080;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    padding-top: 50px;
+}
+main {
+    grid-row: 2;
+    padding: 1.5rem;
+    padding-top: 200px;
+    overflow-y: auto;
+    background-color: #ffffff;
+}
+main h2 {
+    margin-bottom: 1.5rem;
+    color: #808080;
+}
+footer {
+    grid-row: 3;
+    background-color: #808080;
+    color: white;
+    text-align: center;
+    padding: 0.5rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 10;
+    font-weight: bold;
+}
+/* navbar */
+.navbar-brand {
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+.nav-link {
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    line-height: 1.8;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+/* Hover effects for Navbar Links */
+.navbar-nav .nav-item:nth-child(1) .nav-link:hover {
+    color: white; 
+    background-color: #343a40;
+}
+.navbar-nav .nav-item:nth-child(2) .nav-link:hover {
+    color: white; 
+    background-color: #8b008b;
+}
+.navbar-nav .nav-item:nth-child(3) .nav-link:hover {
+    color: white;
+    background-color: #8b4513;
+}
+.navbar-nav .nav-item:nth-child(4) .nav-link:hover {
+    color: white; 
+    background-color: #8b0000;
+}
+/* sidebar */
+.sidebar {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-right: 1px solid #ddd;
+    height: calc(100vh - 120px);
+    position: sticky;
+    top: 120px;
+    overflow-y: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.sidebar .card {
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+}
+.sidebar .card img {
+    border-radius: 8px;
+}
+.sidebar .card .card-body {
+    background-color: #ffffff;
+    padding: 0.75rem;
+    text-align: center;
+}
+/* bootstrap carousel */
+.carousel img {
+    width: 100%; 
+    height: auto; 
+    max-height: 500px; 
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    padding-bottom: 50px;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+.carousel-indicators [data-bs-target] {
+    background-color: #808080; 
+}
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        margin-bottom: 1.5rem;
+    }
+
+    main {
+        margin-top: 100px;
+    }
+}
+
+

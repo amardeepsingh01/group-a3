@@ -1,0 +1,152 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0; 
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 200px 1fr;
+    height: 100vh;
+}
+header {
+    grid-column: span 2;
+    background:  #343a40;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    padding-top: 100px;
+}
+.content {
+    padding: 1em;
+    overflow-y: auto;
+    background: #fdfdfd;
+}
+.sidebar {
+    background: #f5f5f5;
+    padding: 1em;
+    border-right: 1px solid #ccc;
+    overflow-y: auto;
+}
+/* internal navigation */
+.main-navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.main-navigation li {
+    margin-bottom: 5px;
+}
+.main-navigation a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+.main-navigation a:hover {
+    color: #ffd54f;
+}
+/* navbar */
+.navbar-brand {
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+.nav-link {
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    line-height: 1.8;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+/* Hover effects for Navbar Links */
+.navbar-nav .nav-item:nth-child(1) .nav-link:hover {
+    color: white; 
+    background-color: #8b008b;
+}
+.navbar-nav .nav-item:nth-child(2) .nav-link:hover {
+    color: white; 
+    background-color: #8b4513;
+}
+.navbar-nav .nav-item:nth-child(3) .nav-link:hover {
+    color: white; 
+    background-color: #8b0000;
+}
+.navbar-nav .nav-item:nth-child(4) .nav-link:hover {
+    color: white; 
+    background-color: #779999;
+}
+
+/* Blog Posts */
+.post {
+    margin-bottom: 1em;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #fff;
+}
+.post h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+.post .badge {
+    margin-left: 5px;
+}
+
+/* Poll Results */
+#poll-form {
+    margin-bottom: 1em;
+}
+#poll-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+#poll-form input, #poll-form select {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#message-box {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    padding: 10px;
+    display: none;
+    margin-top: 10px
+}
+#poll-results ul {
+    list-style: none;
+    padding: 0;
+}
+#poll-results li {
+    margin-bottom: 5px;
+}
+/* footer*/
+footer {
+    grid-column: span 2;
+    background:  #343a40;
+    color: white;
+    text-align: center;
+    padding: 0.5em;
+    font-weight: bold;
+}
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    body {
+        grid-template-columns: 150px 1fr;
+    }
+    .sidebar {
+        font-size: 0.9em;
+        padding: 0.8em;
+    }
+    .content {
+        padding: 0.8em;
+    }
+}
